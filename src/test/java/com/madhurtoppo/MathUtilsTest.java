@@ -25,6 +25,7 @@ class MathUtilsTest {
     }
 
     @Nested
+    @Tag("Math")
     class testAdd {
         @Test
         @DisplayName("Addition Test for +ve")
@@ -41,7 +42,8 @@ class MathUtilsTest {
 
     @Test
     @DisplayName("Division Test")
-    @EnabledOnOs(OS.WINDOWS)
+//    @EnabledOnOs(OS.WINDOWS)
+    @Tag("Math")
     void testDivide() {
         assertAll(
                 () -> assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), "Divide by zero should throw"),
@@ -51,6 +53,7 @@ class MathUtilsTest {
 
     @RepeatedTest(3)
     @DisplayName("Circle Area Test")
+    @Tag("Circle")
     void testCircleArea() {
         assertEquals(314.1592653589793, mathUtils.circleArea(10), "Should return correct circle area");
     }
