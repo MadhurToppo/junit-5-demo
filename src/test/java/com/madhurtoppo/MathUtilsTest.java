@@ -1,10 +1,6 @@
 package com.madhurtoppo;
 
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.condition.EnabledOnOs;
-import org.junit.jupiter.api.condition.OS;
-
-import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -68,9 +64,4 @@ class MathUtilsTest {
         System.out.println("---Tearing down all---");
     }
 
-//    @Test
-//    @Disabled
-    void testDisabled() {
-        fail("This test is disabled");
-    }
 }
