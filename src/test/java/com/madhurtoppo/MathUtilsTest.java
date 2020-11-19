@@ -14,11 +14,13 @@ class MathUtilsTest {
         System.out.println("---Initializing all---");
     }
 
+
     @BeforeEach
     void init(TestInfo testInfo) {
         mathUtils = new MathUtils();
         System.out.println("Started..." + testInfo.getDisplayName());
     }
+
 
     @Nested
     @Tag("Math")
