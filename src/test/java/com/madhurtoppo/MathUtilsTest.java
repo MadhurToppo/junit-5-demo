@@ -55,6 +55,7 @@ class MathUtilsTest {
     void testCircleArea() {
         assertEquals(314.1592653589793, mathUtils.circleArea(10), "Should return correct circle area");
     }
+    
 
     @AfterEach
     void tearDown(TestInfo testInfo) {
