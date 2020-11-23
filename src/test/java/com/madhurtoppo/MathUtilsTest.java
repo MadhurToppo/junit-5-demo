@@ -4,13 +4,13 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+//@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class MathUtilsTest {
 
     MathUtils mathUtils;
 
     @BeforeAll
-    void beforeAllInit() {
+    static void beforeAllInit() {
         System.out.println("---Initializing all---");
     }
 
@@ -46,7 +46,8 @@ class MathUtilsTest {
         assertAll(
                 () -> assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), "Divide by zero should throw"),
                 () -> assertEquals(3, mathUtils.divide(12, 4)),
-                () -> assertEquals(6, mathUtils.divide(48, 8))
+                () -> assertEquals(6, mathUtils.divide(48, 8)),
+                () -> assertEquals(12, mathUtils.divide(132, 11))
 
         );
     }
@@ -65,7 +66,7 @@ class MathUtilsTest {
     }
 
     @AfterAll
-    void tearDownAll() {
+    static void tearDownAll() {
         System.out.println("---Tearing down all---");
     }
 
