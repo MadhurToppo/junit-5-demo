@@ -28,7 +28,11 @@ class MathUtilsTest {
         @Test
         @DisplayName("Addition Test for +ve")
         void testAddPositive() {
-            assertEquals(7, mathUtils.add(3, 4), "The add method should add two numbers");
+            assertAll(
+                    () -> assertEquals(16, mathUtils.add(12, 4)),
+                    () -> assertEquals(56, mathUtils.add(48, 8)),
+                    () -> assertEquals(24, mathUtils.add(13, 11))
+            );
         }
 
         @Test
