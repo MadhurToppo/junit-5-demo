@@ -61,7 +61,8 @@ class MathUtilsTest {
     @DisplayName("Circle Area Test")
     @Tag("Circle")
     void testCircleArea() {
-        assertEquals(314.1592653589793, mathUtils.circleArea(10), "Should return correct circle area");
+        assertEquals(314.1592653589793, mathUtils.circleArea(10));
+        assertEquals(31415.926535897932, mathUtils.circleArea(100));
     }
 
 
