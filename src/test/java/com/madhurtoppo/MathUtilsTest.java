@@ -32,8 +32,9 @@ class MathUtilsTest {
                     () -> assertEquals(16, mathUtils.add(12, 4)),
                     () -> assertEquals(56, mathUtils.add(48, 8)),
                     () -> assertEquals(24, mathUtils.add(13, 11)),
-                    () -> assertEquals(48, mathUtils.add(42, 6))
-                    );
+                    () -> assertEquals(48, mathUtils.add(42, 6)),
+                    () -> assertEquals(20, mathUtils.add(5, 15))
+            );
         }
 
         @Test
@@ -53,8 +54,7 @@ class MathUtilsTest {
                 () -> assertEquals(3, mathUtils.divide(12, 4)),
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
                 () -> assertEquals(12, mathUtils.divide(132, 11))
-
-        );
+                );
     }
 
     @RepeatedTest(3)
