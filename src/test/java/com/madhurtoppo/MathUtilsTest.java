@@ -13,14 +13,12 @@ class MathUtilsTest {
     static void beforeAllInit() {
         System.out.println("---Initializing all---");
     }
-
-
+    
     @BeforeEach
     void init(TestInfo testInfo) {
         mathUtils = new MathUtils();
         System.out.println("Started..." + testInfo.getDisplayName());
     }
-
 
     @Nested
     @Tag("Math")
@@ -32,7 +30,6 @@ class MathUtilsTest {
                     () -> assertEquals(16, mathUtils.add(12, 4)),
                     () -> assertEquals(56, mathUtils.add(48, 8)),
                     () -> assertEquals(24, mathUtils.add(13, 11)),
-                    () -> assertEquals(20, mathUtils.add(5, 15)),
                     () -> assertEquals(0, mathUtils.add(0, 0))
             );
         }
