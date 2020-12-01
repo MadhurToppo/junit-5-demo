@@ -50,8 +50,9 @@ class MathUtilsTest {
                 () -> assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), "Divide by zero should throw"),
                 () -> assertEquals(3, mathUtils.divide(12, 4)),
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
-                () -> assertEquals(12, mathUtils.divide(132, 11))
-                );
+                () -> assertEquals(12, mathUtils.divide(132, 11)),
+                () -> assertEquals(-5, mathUtils.divide(10, -2))
+        );
     }
 
     @RepeatedTest(3)
