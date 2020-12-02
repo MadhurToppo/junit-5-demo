@@ -51,7 +51,8 @@ class MathUtilsTest {
                 () -> assertEquals(3, mathUtils.divide(12, 4)),
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
                 () -> assertEquals(12, mathUtils.divide(132, 11)),
-                () -> assertEquals(-5, mathUtils.divide(10, -2))
+                () -> assertEquals(-5, mathUtils.divide(10, -2)),
+                () -> assertEquals(20, mathUtils.divide(-200, -10))
         );
     }
 
@@ -62,7 +63,6 @@ class MathUtilsTest {
         assertEquals(314.1592653589793, mathUtils.circleArea(10));
         assertEquals(31415.926535897932, mathUtils.circleArea(100));
     }
-
 
     @AfterEach
     void tearDown(TestInfo testInfo) {
