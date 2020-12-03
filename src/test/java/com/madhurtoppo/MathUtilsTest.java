@@ -52,7 +52,9 @@ class MathUtilsTest {
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
                 () -> assertEquals(12, mathUtils.divide(132, 11)),
                 () -> assertEquals(-5, mathUtils.divide(10, -2)),
-                () -> assertEquals(20, mathUtils.divide(-200, -10))
+                () -> assertEquals(20, mathUtils.divide(-200, -10)),
+                () -> assertEquals(-1, mathUtils.divide(-20, 20))
+
         );
     }
 
