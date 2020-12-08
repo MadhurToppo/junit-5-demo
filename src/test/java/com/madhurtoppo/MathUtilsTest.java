@@ -48,7 +48,6 @@ class MathUtilsTest {
     void testDivide() {
         assertAll(
                 () -> assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), "Divide by zero should throw"),
-                () -> assertEquals(3, mathUtils.divide(12, 4)),
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
                 () -> assertEquals(12, mathUtils.divide(132, 11)),
                 () -> assertEquals(-5, mathUtils.divide(10, -2)),
@@ -65,8 +64,6 @@ class MathUtilsTest {
         assertEquals(31415.926535897932, mathUtils.circleArea(100));
         assertEquals(3.141592653589793, mathUtils.circleArea(1));
         assertEquals(12.566370614359172, mathUtils.circleArea(2));
-
-
     }
 
     @AfterEach
