@@ -68,7 +68,7 @@ class MathUtilsTest {
 
     @AfterEach
     void tearDown(TestInfo testInfo) {
-        System.out.println("Finished..." + testInfo.getDisplayName());
+        System.out.println("Finished testing..." + testInfo.getDisplayName());
     }
 
     @AfterAll
