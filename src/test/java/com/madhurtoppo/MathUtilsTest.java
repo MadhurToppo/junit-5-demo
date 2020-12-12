@@ -61,7 +61,6 @@ class MathUtilsTest {
         assertEquals(314.1592653589793, mathUtils.circleArea(10));
         assertEquals(31415.926535897932, mathUtils.circleArea(100));
         assertEquals(3.141592653589793, mathUtils.circleArea(1));
-        assertEquals(12.566370614359172, mathUtils.circleArea(2));
     }
 
     @AfterEach
