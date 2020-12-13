@@ -29,7 +29,6 @@ class MathUtilsTest {
             assertAll(
                     () -> assertEquals(16, mathUtils.add(12, 4)),
                     () -> assertEquals(56, mathUtils.add(48, 8)),
-                    () -> assertEquals(24, mathUtils.add(13, 11)),
                     () -> assertEquals(0, mathUtils.add(0, 0))
             );
         }
