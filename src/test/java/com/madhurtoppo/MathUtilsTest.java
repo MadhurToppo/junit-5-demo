@@ -17,7 +17,7 @@ class MathUtilsTest {
     @BeforeEach
     void init(TestInfo testInfo) {
         mathUtils = new MathUtils();
-        System.out.println("Started..." + testInfo.getDisplayName());
+        System.out.println("Started testing..." + testInfo.getDisplayName());
     }
 
     @Nested
