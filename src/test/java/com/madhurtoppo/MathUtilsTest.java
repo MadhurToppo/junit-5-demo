@@ -48,7 +48,6 @@ class MathUtilsTest {
         assertAll(
                 () -> assertThrows(ArithmeticException.class, () -> mathUtils.divide(1, 0), "Divide by zero should throw"),
                 () -> assertEquals(6, mathUtils.divide(48, 8)),
-                () -> assertEquals(-5, mathUtils.divide(10, -2)),
                 () -> assertEquals(20, mathUtils.divide(-200, -10))
         );
     }
