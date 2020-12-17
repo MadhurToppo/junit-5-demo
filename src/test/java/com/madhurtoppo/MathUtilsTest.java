@@ -68,7 +68,7 @@ class MathUtilsTest {
 
     @AfterAll
     static void tearDownAll() {
-        System.out.println("---Tearing down all---");
+        System.out.println("---Tearing down everything---");
     }
 
 }
