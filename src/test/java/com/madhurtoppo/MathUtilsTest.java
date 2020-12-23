@@ -37,6 +37,7 @@ class MathUtilsTest {
         @DisplayName("Addition Test for -ve")
         void testAddNegative() {
             assertEquals(-5, mathUtils.add(-2, -3), "The add method should add two numbers");
+            assertEquals(-14, mathUtils.add(-6, -8));
         }
     }
 
